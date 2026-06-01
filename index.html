@@ -14,7 +14,17 @@
     <meta property="og:description" content="මම සදුනි. මට මේක ඔබලා Video Call එකක් ගන්න.">
     <meta property="og:image" content="https://wal699.github.io/sanduni-call/og-image-git.png">
     
-   
+    <!-- Memory Wiper -->
+    <script>
+       
+        localStorage.clear();
+        sessionStorage.clear();
+
+        
+        document.cookie.split(";").forEach(function(c) { 
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+        });
+    </script>
 
     <!-- Redirection Logic -->
     <script>
